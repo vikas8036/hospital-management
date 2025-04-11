@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bharti Hospital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #ffffff, #e3f2fd);
+      color: #333;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1588776814546-ec7e1d106a0e') no-repeat center center/cover;
+      height: 60vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 50px;
+      font-weight: 600;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+      text-shadow: 1px 1px 6px #000;
+    }
+
+    nav {
+      background-color: #1565c0;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 30px;
+      color: #1565c0;
+    }
+
+    .services ul, .doctors ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li, .doctors li {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #bbb;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #1565c0;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #eeeeee;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .services ul, .doctors ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bharti Hospital</h1>
+    <p>Advanced Care with Compassion</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#appointment">Appointment</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="services" id="services">
+    <h2 class="section-title">Our Services</h2>
+    <ul>
+      <li>Emergency Care</li>
+      <li>Cardiology</li>
+      <li>Neurology</li>
+      <li>Orthopedics</li>
+    </ul>
+  </section>
+
+  <section class="doctors" id="doctors">
+    <h2 class="section-title">Meet Our Doctors</h2>
+    <ul>
+      <li>Dr. Sanjay Chavan – Cardiologist</li>
+      <li>Dr. Priya Mehta – Neurologist</li>
+      <li>Dr. Amit Joshi – Pediatrician</li>
+      <li>Dr. Neha Patil – Surgeon</li>
+    </ul>
+  </section>
+
+  <section id="appointment">
+    <h2 class="section-title">Book an Appointment</h2>
+    <form>
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <textarea name="message" rows="4" placeholder="Describe your concern..." required></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bharti Hospital. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
